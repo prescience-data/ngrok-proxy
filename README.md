@@ -1,8 +1,5 @@
 # ngrok-proxy
 
- 
-# useLocalProxy
-
 A lightweight utility for spinning up a **local authenticated proxy server** that is publicly reachable via **Ngrok TCP
 tunneling**. 
 
@@ -17,7 +14,7 @@ securely.
 - Exposes it publicly through an **Ngrok TCP tunnel**
 - Returns a fully-qualified proxy URL (`http://user:pass@host:port`)
 - Provides a clean `close()` method to tear down both the proxy and tunnel
-- Lightweight — depends only on `ngrok` and `proxy-chain`
+- Lightweight, depends only on `ngrok` and `proxy-chain`
 
 ---
 
