@@ -1,6 +1,6 @@
 # ngrok-proxy
 
-````markdown
+ 
 # useLocalProxy
 
 A lightweight utility for spinning up a **local authenticated proxy server** that is publicly reachable via **Ngrok TCP
