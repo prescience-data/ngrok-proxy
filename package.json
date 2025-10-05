@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "ngrok-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "tsx ./tests/start",
+    "postinstall": "run-s postinstall:*",
+    "postinstall:sort": "sort-package-json",
+    "upgrade-all": "run-s upgrade-all:*",
+    "upgrade-all:ncu": "ncu -u --packageFile package.json",
+    "upgrade-all:update": "pnpm update"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ngrok": "5.0.0-beta.2",
+    "proxy-chain": "^2.5.9",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "^24.6.2",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unicorn": "^61.0.2",
+    "npm-check-updates": "^19.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.6.2",
+    "sort-package-json": "^3.4.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "ngrok"
+    ]
+  }
+}
