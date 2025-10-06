@@ -21,7 +21,7 @@ securely.
 ## Installation
 
 ```bash
-npm install ngrok proxy-chain dotenv
+pnpm install
 ````
 
 Make sure your **Ngrok auth token** is set in the environment:
