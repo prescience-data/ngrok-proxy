@@ -64,8 +64,6 @@ main().catch(console.error)
 
 ## API
 
-### `useLocalProxy(options: LocalProxyOptions): Promise<{ url: string; close: () => Promise<void> }>`
-
 Starts a local authenticated proxy and Ngrok tunnel.
 
 | Option     | Type          | Default               | Description                                                                 |
